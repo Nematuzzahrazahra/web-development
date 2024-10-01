@@ -12,6 +12,13 @@ const Todo = () => {
         }
     }
 
+    const removeTodod = (index) => {
+        console.log(index)
+        const temp = todoList
+        temp.splice(index,1)
+        setTodoList([...temp])
+    }
+
   return (
     <div className='h-screen flex-items-c enter flex-col mt-10'>
         <h1 className='text-4xl font-bold mb-8'>my to do list</h1>
@@ -28,7 +35,7 @@ const Todo = () => {
                 todoList.map((todo, index) => (
                     <div key={index} className='flex justify-between items-center mb-3 p-2 rounded-lg bg-yellow-300'>
                         <h5 className='text-lg font-semibold text-gray-800'>{todo}</h5>
-                        <button className='bg-red-500 hover: bg-red-700 text white font-bold py-1 px-3 rounded '>Delete</button>
+                        <button  onClick={() => removeTodod(index)}className='bg-red-500 hover: bg-red-700 text white font-bold py-1 px-3 rounded '>Delete</button>
                     </div>
                 ))
 

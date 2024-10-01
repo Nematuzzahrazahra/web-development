@@ -76,11 +76,11 @@ const Navbar = () => {
             
             
             
-            <a
+            <Link
               className="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-              href="#"
+              href="/event-handling"
             >
-              <svg
+              {/* <svg
                 className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -96,14 +96,14 @@ const Navbar = () => {
                 <path d="M18 14h-8" />
                 <path d="M15 18h-5" />
                 <path d="M10 6h8v4h-8V6Z" />
-              </svg>
+              </svg> */}
               EVENTHANDLING
-            </a>
-            <a
+            </Link>
+            <Link
               className="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-              href="#"
+              href="/todo"
             >
-              <svg
+              {/* <svg
                 className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -119,9 +119,21 @@ const Navbar = () => {
                 <path d="M18 14h-8" />
                 <path d="M15 18h-5" />
                 <path d="M10 6h8v4h-8V6Z" />
-              </svg>
-              TO Do
-            </a>
+              </svg> */}
+              TODo
+            </Link>
+            <Link
+              className="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+              href="/signup"
+            >
+             signup
+             </Link>
+             <Link
+              className="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+              href="/services"
+            >
+             Services
+             </Link>
             
             
             {/* End Button Group */}
